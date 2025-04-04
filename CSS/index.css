@@ -76,6 +76,9 @@ div.sectionHead p {
   display: inline-block;
   vertical-align: middle;
 }
+.header .container .logo:hover {
+  color: var(--btn-fruitName-conlor);
+}
 .header .container .logo img {
   width: 50px;
 }
@@ -97,6 +100,12 @@ div.sectionHead p {
 }
 .header ul.links li img {
   width: 1.5rem;
+}
+.header ul.links li img:hover {
+  /* background-color: var(--btn-fruitName-conlor);
+  border: 1px solid var(--btn-fruitName-conlor); */
+  border-radius: 12px;
+  box-shadow: 0 0 10px var(--btn-fruitName-conlor);
 }
 /* ------------------------------Home Page */
 .home {
@@ -232,6 +241,9 @@ p.JohnhexP + p {
   border: none;
   border-bottom: 1px solid var(--secondary-color);
   margin-top: 10px;
+}
+.contactus form input:hover {
+  border-bottom: 2px solid var(--btn-fruitName-conlor);
 }
 .contactus form input[placeholder="Message"] {
   margin-top: 40px;
