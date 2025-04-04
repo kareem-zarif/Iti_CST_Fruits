@@ -23,13 +23,13 @@ body::selection {
   background-color: var(--btn-fruitName-conlor);
 }
 button:hover {
-  color: var(--main-color) !important;
+  color: var(--main-color) ;
   background-color: white;
 }
 h1:hover,
 h2:hover,
 h3:hover {
-  color: var(--btn-fruitName-conlor) !important;
+  color: var(--btn-fruitName-conlor) ;
 }
 /* ************************************components */
 .container {
@@ -171,14 +171,26 @@ div.sectionHead p {
 .fruitLine .fruitLineText h3 {
   margin-bottom: 10px;
 }
+.fruitLine .fruitLineText h3:has(span.grapesSpan):hover {
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+.fruitLine .fruitLineText h3:has(span.juavaSpan):hover {
+  color: wheat !important;
+}
 .orangeSpan {
   color: orange;
 }
 .grapesSpan {
-  color: rgba(0, 0, 0, 0.734);
+  color: rgba(0, 0, 0, 0.7);
 }
 .juavaSpan {
   color: wheat;
+}
+.fruitLineText h3:has(span.grapesSpan) + p::selection {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.fruitLineText h3:has(span.juavaSpan) + p::selection {
+  background-color: wheat;
 }
 .fruitLine .fruitLineText p {
   font-size: 0.9rem;
@@ -210,6 +222,9 @@ div.tastyFruits h1 {
   color: white;
   font-size: 3rem;
   width: 100%;
+}
+div.tastyFruits h1 span:hover{
+color: var(--btn-fruitName-conlor);
 }
 /* ----------------------------------testominal */
 .testmonial .container {
