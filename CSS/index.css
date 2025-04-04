@@ -1,0 +1,313 @@
+/* Variables */
+:root {
+  --main-color: black;
+  --secondary-color: rgb(88, 88, 88);
+  --btn-fruitName-conlor: orange;
+  --sectionBackground-color: rgba(0, 0, 0, 0.04);
+}
+
+/*  Global Rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Pacifico", cursive;
+}
+body::selection {
+  /* color: white; */
+  background-color: var(--btn-fruitName-conlor);
+}
+button:hover {
+  color: var(--main-color) !important;
+  background-color: white;
+}
+h1:hover,
+h2:hover,
+h3:hover {
+  color: var(--btn-fruitName-conlor) !important;
+}
+/* ************************************components */
+.container {
+  padding: 60px 60px;
+  margin: 0 auto;
+}
+.redBtn {
+  color: white;
+  border: none;
+  padding: 8px;
+  margin: 5px;
+  background-color: var(--btn-fruitName-conlor);
+}
+.blackBtn {
+  color: white;
+  border: none;
+  padding: 8px;
+  margin: 5px;
+  background-color: var(--main-color);
+}
+
+div.sectionHead {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  padding-bottom: 30px;
+}
+div.sectionHead p {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+}
+/* -----------------------------------header */
+.header {
+  background-color: var(--sectionBackground-color);
+}
+.header .container {
+  padding: 0 60px 40px;
+  line-height: 50px;
+}
+.header .container > div {
+  display: inline-block;
+}
+.header .container .logo *,
+.header .container .links * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header .container .logo img {
+  width: 50px;
+}
+.header .container ul {
+  float: right;
+  list-style: none;
+}
+.header ul.links li {
+  float: left;
+  margin: 0 7px;
+}
+.header ul.links li a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+.header ul.links li a:hover {
+  color: var(--btn-fruitName-conlor);
+  text-decoration: underline;
+}
+.header ul.links li img {
+  width: 1.5rem;
+}
+/* ------------------------------Home Page */
+.home {
+  background-color: var(--sectionBackground-color);
+}
+.home .container > div {
+  max-width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.home .leftDiv * {
+  margin-bottom: 20px;
+}
+.home .leftDiv p {
+  color: var(--secondary-color);
+}
+.home .rightDiv {
+  float: inline-end;
+}
+.home .rightDiv img {
+  width: 75%;
+}
+/* -----------------------services */
+.services .container {
+  text-align: center;
+}
+.services .ServiceCardsDiv div.serviceCard {
+  display: inline-block;
+  max-width: 30%;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.147);
+  margin: 0 8px;
+}
+.services .ServiceCardsDiv div.serviceCard:hover {
+  box-shadow: 0 0 3px var(--btn-fruitName-conlor);
+}
+.services div.serviceCard div.fruitLogo img {
+  width: 50px;
+  margin: 20px auto 0;
+}
+.services div.serviceCard h3 {
+  color: var(--btn-fruitName-conlor);
+  font-weight: normal;
+}
+.services div.serviceCard p {
+  font-size: 0.7rem;
+  color: var(--secondary-color);
+}
+.services button {
+  margin-top: 20px;
+}
+/* --------------------------fruits */
+.fruitLine {
+  margin-bottom: 55px;
+}
+.fruitLine div {
+  display: inline-block;
+}
+.fruitLine .fruitLineText {
+  width: 60%;
+  margin-right: 5px;
+}
+.fruitLine .fruitLineText h3 {
+  margin-bottom: 10px;
+}
+.orangeSpan {
+  color: orange;
+}
+.grapesSpan {
+  color: rgba(0, 0, 0, 0.734);
+}
+.juavaSpan {
+  color: wheat;
+}
+.fruitLine .fruitLineText p {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+.fruitLine .fruitLineText button {
+  width: 120px;
+}
+.fruitLine div:nth-child(2) {
+  text-align: center;
+}
+.fruitLine img {
+  height: 130px;
+  margin-left: 40px;
+}
+/* ----------------------------Tasty fruits */
+div.tastyFruits {
+  position: relative;
+  text-align: center;
+}
+div.tastyFruits img {
+  width: 100%;
+}
+div.tastyFruits h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 3rem;
+  width: 100%;
+}
+/* ----------------------------------testominal */
+.testmonial .container {
+  text-align: center;
+}
+.testmonial img {
+  width: 250px;
+}
+.testmonial p.JohnhexP {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.testmonial p.JohnhexP:hover {
+  color: var(--btn-fruitName-conlor);
+}
+p.JohnhexP + p {
+  line-height: 1.3rem;
+}
+/* ---------------------------------------------Contact us */
+
+.contactus .container .leftSide {
+  display: inline-block;
+  width: 60%;
+}
+
+.contactus form input {
+  font-family: "Pacifico", cursive;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  margin-top: 10px;
+}
+.contactus form input[placeholder="Message"] {
+  margin-top: 40px;
+}
+.contactus img {
+  height: 270px;
+  float: right;
+}
+.contactus form > button {
+  margin-top: 20px;
+}
+/* ---------------------------------------footer */
+.footer {
+  font-family: "Work Sans", sans-serif;
+}
+
+.footer .container .column {
+  vertical-align: top;
+  display: inline-block;
+  max-width: 110px;
+  margin-right: 100px;
+}
+.footer .container .column h4 {
+  margin-bottom: 10px;
+}
+.footer .container .column p {
+  font-size: 0.8rem;
+}
+.footer .container .column img {
+  width: 20%;
+}
+.footer .container .column img:hover {
+  background-color: var(--btn-fruitName-conlor);
+  border-radius: 50%;
+  border: 1px solid var(--btn-fruitName-conlor);
+}
+
+.footer .container .column:nth-child(4) * {
+  margin-bottom: 7px;
+}
+.footer .container .column:nth-child(4) input:hover {
+  border: 2px solid var(--btn-fruitName-conlor);
+  box-shadow: 0 0 2px var(--btn-fruitName-conlor);
+}
+.footer .container .column:nth-child(4) button {
+  margin-left: 0;
+}
+/* ----------------------------copyRights */
+.copyRights {
+  height: 50px;
+  background-color: var(--sectionBackground-color);
+  position: relative;
+}
+.copyRights p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  /* text-align: center; */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* font families used in website */
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*  */
